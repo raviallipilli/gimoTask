@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction</title>
+</head>
+<style>
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+<body>
+
+<h3>Please enter the data for Transaction</h3>
+
+<div>
+    <form id="myForm" method="post" action="saveTransaction.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name..">
+
+        <label for="hashKey">HashKey</label>
+        <input type="text" id="hashKey" name="hashKey" placeholder="HashKey..">
+
+        <label for="type">Type</label>
+        <input type="text" id="type" name="type" placeholder="Type..">
+
+        <label for="amount">Amount</label>
+        <input type="text" id="amount" name="amount" placeholder="Amount..">
+
+        <label for="reference">Reference</label>
+        <input type="text" id="reference" name="reference" placeholder="Reference..">
+
+        <label for="timeStamp">TimeStamp</label>
+        <input type="text" id="timeStamp" name="timeStamp" placeholder="TimeStamp..">
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
